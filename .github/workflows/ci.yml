@@ -44,7 +44,7 @@ jobs:
           rm -rf Payload
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: TomatoStudy-ipa
           path: TomatoStudy/TomatoStudy.ipa
