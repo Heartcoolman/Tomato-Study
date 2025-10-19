@@ -1,0 +1,50 @@
+name: Build iOS App
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Select Xcode 15
+        run: sudo xcode-select -s /Applications/Xcode_15.2.app
+
+      - name: Resolve packages
+        run: |
+          cd TomatoStudy
+          xcodebuild -resolvePackageDependencies -project TomatoStudy.xcodeproj -scheme TomatoStudy
+
+      - name: Build for iPhone
+        run: |
+          cd TomatoStudy
+          xcodebuild \
+            -project TomatoStudy.xcodeproj \
+            -scheme TomatoStudy \
+            -configuration Release \
+            -sdk iphoneos \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_STYLE=Manual \
+            build
+
+      - name: Package IPA
+        run: |
+          cd TomatoStudy
+          APP_PATH="$(find ~/Library/Developer/Xcode/DerivedData -name TomatoStudy.app -path '*Release-iphoneos*' -print -quit)"
+          if [ -z "$APP_PATH" ]; then
+            APP_PATH="build/Release-iphoneos/TomatoStudy.app"
+          fi
+          mkdir -p Payload
+          cp -R "$APP_PATH" Payload/
+          /usr/bin/zip -r TomatoStudy.ipa Payload
+          rm -rf Payload
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: TomatoStudy-ipa
+          path: TomatoStudy/TomatoStudy.ipa
