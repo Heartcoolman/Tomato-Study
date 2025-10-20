@@ -13,7 +13,25 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Select Xcode 15
-        run: sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Developer
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          candidates=(/Applications/Xcode_15*.app)
+          shopt -u nullglob
+          if [ ${#candidates[@]} -eq 0 ]; then
+            echo "No Xcode 15 bundle found in /Applications" >&2
+            ls -1 /Applications >&2
+            exit 1
+          fi
+          selected="${candidates[0]}"
+          for candidate in "${candidates[@]}"; do
+            if [[ "$candidate" > "$selected" ]]; then
+              selected="$candidate"
+            fi
+          done
+          echo "Selecting Xcode at $selected"
+          sudo xcode-select -s "$selected/Contents/Developer"
+          xcodebuild -version
 
       - name: Resolve packages
         run: |
