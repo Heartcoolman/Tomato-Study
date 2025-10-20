@@ -132,8 +132,8 @@ A10000202000000100000001 /* AppState.swift */,
 A1F000072000000100000001 /* Models */,
 A1F000082000000100000001 /* Stores */,
 A1F000092000000100000001 /* Services */,
-A1F0000A2000000100000001 /* Views */,
-A1F0000B2000000100000001 /* Utilities */,
+A1F1000A2000000100000001 /* Views */,
+A1F1000B2000000100000001 /* Utilities */,
 );
 sourceTree = "<group>";
 };
@@ -176,7 +176,7 @@ A10000162000000100000001 /* SoundManager.swift */,
 name = Services;
 sourceTree = "<group>";
 };
-A1F0000A2000000100000001 /* Views */ = {
+A1F1000A2000000100000001 /* Views */ = {
 isa = PBXGroup;
 children = (
 A10000022000000100000001 /* ContentView.swift */,
@@ -197,7 +197,7 @@ A100001A2000000100000001 /* StatCard.swift */,
 name = Components;
 sourceTree = "<group>";
 };
-A1F0000B2000000100000001 /* Utilities */ = {
+A1F1000B2000000100000001 /* Utilities */ = {
 isa = PBXGroup;
 children = (
 A100001C2000000100000001 /* CSVExporter.swift */,
