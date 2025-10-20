@@ -12,14 +12,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Select Xcode 15
+      - name: Select Xcode 26
         run: |
           set -euo pipefail
           shopt -s nullglob
-          candidates=(/Applications/Xcode_15*.app)
+          candidates=(/Applications/Xcode_26*.app)
           shopt -u nullglob
           if [ ${#candidates[@]} -eq 0 ]; then
-            echo "No Xcode 15 bundle found in /Applications" >&2
+            echo "No Xcode 26 bundle found in /Applications" >&2
             ls -1 /Applications >&2
             exit 1
           fi
