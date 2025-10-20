@@ -1,0 +1,68 @@
+name: Build iOS App
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Select Xcode 26
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          candidates=(/Applications/Xcode_26*.app)
+          shopt -u nullglob
+          if [ ${#candidates[@]} -eq 0 ]; then
+            echo "No Xcode 26 bundle found in /Applications" >&2
+            ls -1 /Applications >&2
+            exit 1
+          fi
+          selected="${candidates[0]}"
+          for candidate in "${candidates[@]}"; do
+            if [[ "$candidate" > "$selected" ]]; then
+              selected="$candidate"
+            fi
+          done
+          echo "Selecting Xcode at $selected"
+          sudo xcode-select -s "$selected/Contents/Developer"
+          xcodebuild -version
+
+      - name: Resolve packages
+        run: |
+          cd TomatoStudy
+          xcodebuild -resolvePackageDependencies -project TomatoStudy.xcodeproj -scheme TomatoStudy
+
+      - name: Build for iPhone
+        run: |
+          cd TomatoStudy
+          xcodebuild \
+            -project TomatoStudy.xcodeproj \
+            -scheme TomatoStudy \
+            -configuration Release \
+            -sdk iphoneos \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_STYLE=Manual \
+            build
+
+      - name: Package IPA
+        run: |
+          cd TomatoStudy
+          APP_PATH="$(find ~/Library/Developer/Xcode/DerivedData -name TomatoStudy.app -path '*Release-iphoneos*' -print -quit)"
+          if [ -z "$APP_PATH" ]; then
+            APP_PATH="build/Release-iphoneos/TomatoStudy.app"
+          fi
+          mkdir -p Payload
+          cp -R "$APP_PATH" Payload/
+          /usr/bin/zip -r TomatoStudy.ipa Payload
+          rm -rf Payload
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: TomatoStudy-ipa
+          path: TomatoStudy/TomatoStudy.ipa

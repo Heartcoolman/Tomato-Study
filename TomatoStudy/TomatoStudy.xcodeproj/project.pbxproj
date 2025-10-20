@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+archiveVersion = 1;
+classes = {};
+objectVersion = 56;
+objects = {
+
+/* Begin PBXBuildFile section */
+A10000012000000100000001 /* TomatoStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000002000000100000001 /* TomatoStudyApp.swift */; };
+A10000032000000100000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000022000000100000001 /* ContentView.swift */; };
+A10000052000000100000001 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000042000000100000001 /* TimerView.swift */; };
+A10000072000000100000001 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000062000000100000001 /* HistoryView.swift */; };
+A10000092000000100000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000082000000100000001 /* SettingsView.swift */; };
+A100000B2000000100000001 /* TimerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000A2000000100000001 /* TimerEngine.swift */; };
+A100000D2000000100000001 /* TimerPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000C2000000100000001 /* TimerPhase.swift */; };
+A100000F2000000100000001 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000E2000000100000001 /* SettingsStore.swift */; };
+A10000112000000100000001 /* StatsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000102000000100000001 /* StatsStore.swift */; };
+A10000132000000100000001 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000122000000100000001 /* NotificationManager.swift */; };
+A10000152000000100000001 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000142000000100000001 /* HapticsManager.swift */; };
+A10000172000000100000001 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000162000000100000001 /* SoundManager.swift */; };
+A10000192000000100000001 /* CircularTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000182000000100000001 /* CircularTimerView.swift */; };
+A100001B2000000100000001 /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001A2000000100000001 /* StatCard.swift */; };
+A100001D2000000100000001 /* CSVExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001C2000000100000001 /* CSVExporter.swift */; };
+A100001F2000000100000001 /* KeyboardShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001E2000000100000001 /* KeyboardShortcuts.swift */; };
+A10000212000000100000001 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000202000000100000001 /* AppState.swift */; };
+A10000232000000100000001 /* TimerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000222000000100000001 /* TimerSession.swift */; };
+A10000252000000100000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000242000000100000001 /* Assets.xcassets */; };
+A10000272000000100000001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000262000000100000001 /* Preview Assets.xcassets */; };
+A10000292000000100000001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10000282000000100000001 /* LaunchScreen.storyboard */; };
+A10000312000000100000001 /* TimerEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000302000000100000001 /* TimerEngineTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+A10000362000000100000001 /* PBXContainerItemProxy */ = {
+isa = PBXContainerItemProxy;
+containerPortal = A1F000002000000100000001 /* Project object */;
+proxyType = 1;
+remoteGlobalIDString = A1A000002000000100000001;
+remoteInfo = TomatoStudy;
+};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+A10000002000000100000001 /* TomatoStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoStudyApp.swift; sourceTree = "<group>"; };
+A10000022000000100000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+A10000042000000100000001 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+A10000062000000100000001 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+A10000082000000100000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+A100000A2000000100000001 /* TimerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEngine.swift; sourceTree = "<group>"; };
+A100000C2000000100000001 /* TimerPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPhase.swift; sourceTree = "<group>"; };
+A100000E2000000100000001 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+A10000102000000100000001 /* StatsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsStore.swift; sourceTree = "<group>"; };
+A10000122000000100000001 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+A10000142000000100000001 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+A10000162000000100000001 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+A10000182000000100000001 /* CircularTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTimerView.swift; sourceTree = "<group>"; };
+A100001A2000000100000001 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
+A100001C2000000100000001 /* CSVExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVExporter.swift; sourceTree = "<group>"; };
+A100001E2000000100000001 /* KeyboardShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcuts.swift; sourceTree = "<group>"; };
+A10000202000000100000001 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+A10000222000000100000001 /* TimerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSession.swift; sourceTree = "<group>"; };
+A10000242000000100000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+A10000262000000100000001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+A10000282000000100000001 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+A100002A2000000100000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+A100002C2000000100000001 /* TomatoStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomatoStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+A100002E2000000100000001 /* TomatoStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TomatoStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+A10000302000000100000001 /* TimerEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEngineTests.swift; sourceTree = "<group>"; };
+A10000322000000100000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+A1A000032000000100000001 /* Frameworks */ = {
+isa = PBXFrameworksBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+A1B000032000000100000001 /* Frameworks */ = {
+isa = PBXFrameworksBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+A1F000012000000100000001 = {
+isa = PBXGroup;
+children = (
+A1F000022000000100000001 /* Products */,
+A1F000032000000100000001 /* TomatoStudy */,
+A1F000042000000100000001 /* TomatoStudyTests */,
+);
+sourceTree = "<group>";
+};
+A1F000022000000100000001 /* Products */ = {
+isa = PBXGroup;
+children = (
+A100002E2000000100000001 /* TomatoStudy.app */,
+A100002C2000000100000001 /* TomatoStudyTests.xctest */,
+);
+name = Products;
+sourceTree = "<group>";
+};
+A1F000032000000100000001 /* TomatoStudy */ = {
+isa = PBXGroup;
+children = (
+A100002A2000000100000001 /* Info.plist */,
+A1F000052000000100000001 /* Sources */,
+A1F000062000000100000001 /* Resources */,
+);
+path = TomatoStudy;
+sourceTree = "<group>";
+};
+A1F000042000000100000001 /* TomatoStudyTests */ = {
+isa = PBXGroup;
+children = (
+A10000302000000100000001 /* TimerEngineTests.swift */,
+A10000322000000100000001 /* Info.plist */,
+);
+path = TomatoStudyTests;
+sourceTree = "<group>";
+};
+A1F000052000000100000001 /* Sources */ = {
+isa = PBXGroup;
+children = (
+A10000002000000100000001 /* TomatoStudyApp.swift */,
+A10000202000000100000001 /* AppState.swift */,
+A1F000072000000100000001 /* Models */,
+A1F000082000000100000001 /* Stores */,
+A1F000092000000100000001 /* Services */,
+A1F1000A2000000100000001 /* Views */,
+A1F1000B2000000100000001 /* Utilities */,
+);
+sourceTree = "<group>";
+};
+A1F000062000000100000001 /* Resources */ = {
+isa = PBXGroup;
+children = (
+A10000242000000100000001 /* Assets.xcassets */,
+A10000262000000100000001 /* Preview Assets.xcassets */,
+A10000282000000100000001 /* LaunchScreen.storyboard */,
+);
+name = Resources;
+sourceTree = "<group>";
+};
+A1F000072000000100000001 /* Models */ = {
+isa = PBXGroup;
+children = (
+A100000C2000000100000001 /* TimerPhase.swift */,
+A10000222000000100000001 /* TimerSession.swift */,
+);
+name = Models;
+sourceTree = "<group>";
+};
+A1F000082000000100000001 /* Stores */ = {
+isa = PBXGroup;
+children = (
+A100000E2000000100000001 /* SettingsStore.swift */,
+A10000102000000100000001 /* StatsStore.swift */,
+);
+name = Stores;
+sourceTree = "<group>";
+};
+A1F000092000000100000001 /* Services */ = {
+isa = PBXGroup;
+children = (
+A100000A2000000100000001 /* TimerEngine.swift */,
+A10000122000000100000001 /* NotificationManager.swift */,
+A10000142000000100000001 /* HapticsManager.swift */,
+A10000162000000100000001 /* SoundManager.swift */,
+);
+name = Services;
+sourceTree = "<group>";
+};
+A1F1000A2000000100000001 /* Views */ = {
+isa = PBXGroup;
+children = (
+A10000022000000100000001 /* ContentView.swift */,
+A10000042000000100000001 /* TimerView.swift */,
+A10000062000000100000001 /* HistoryView.swift */,
+A10000082000000100000001 /* SettingsView.swift */,
+A1F0000A3000000100000001 /* Components */,
+);
+name = Views;
+sourceTree = "<group>";
+};
+A1F0000A3000000100000001 /* Components */ = {
+isa = PBXGroup;
+children = (
+A10000182000000100000001 /* CircularTimerView.swift */,
+A100001A2000000100000001 /* StatCard.swift */,
+);
+name = Components;
+sourceTree = "<group>";
+};
+A1F1000B2000000100000001 /* Utilities */ = {
+isa = PBXGroup;
+children = (
+A100001C2000000100000001 /* CSVExporter.swift */,
+A100001E2000000100000001 /* KeyboardShortcuts.swift */,
+);
+name = Utilities;
+sourceTree = "<group>";
+};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+A1A000002000000100000001 /* TomatoStudy */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = A1A0000A2000000100000001 /* Build configuration list for PBXNativeTarget "TomatoStudy" */;
+buildPhases = (
+A1A000012000000100000001 /* Sources */,
+A1A000022000000100000001 /* Resources */,
+A1A000032000000100000001 /* Frameworks */,
+);
+buildRules = (
+);
+dependencies = (
+);
+name = TomatoStudy;
+productName = TomatoStudy;
+productReference = A100002E2000000100000001 /* TomatoStudy.app */;
+productType = "com.apple.product-type.application";
+};
+A1B000002000000100000001 /* TomatoStudyTests */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = A1B0000A2000000100000001 /* Build configuration list for PBXNativeTarget "TomatoStudyTests" */;
+buildPhases = (
+A1B000012000000100000001 /* Sources */,
+A1B000022000000100000001 /* Resources */,
+A1B000032000000100000001 /* Frameworks */,
+);
+buildRules = (
+);
+dependencies = (
+A10000372000000100000001 /* PBXTargetDependency */,
+);
+name = TomatoStudyTests;
+productName = TomatoStudyTests;
+productReference = A100002C2000000100000001 /* TomatoStudyTests.xctest */;
+productType = "com.apple.product-type.bundle.unit-test";
+};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+A1F000002000000100000001 /* Project object */ = {
+isa = PBXProject;
+attributes = {
+BuildIndependentTargetsInParallel = YES;
+LastUpgradeCheck = 1500;
+TargetAttributes = {
+A1A000002000000100000001 = {
+CreatedOnToolsVersion = 15.0;
+LastSwiftMigration = 1500;
+};
+A1B000002000000100000001 = {
+CreatedOnToolsVersion = 15.0;
+};
+};
+};
+buildConfigurationList = A1F0000A2000000100000001 /* Build configuration list for PBXProject "TomatoStudy" */;
+compatibilityVersion = "Xcode 15.0";
+developmentRegion = en;
+hasScannedForEncodings = 0;
+knownRegions = (
+en,
+Base,
+);
+mainGroup = A1F000012000000100000001;
+productRefGroup = A1F000022000000100000001 /* Products */;
+projectDirPath = "";
+projectRoot = "";
+targets = (
+A1A000002000000100000001 /* TomatoStudy */,
+A1B000002000000100000001 /* TomatoStudyTests */,
+);
+};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+A1A000022000000100000001 /* Resources */ = {
+isa = PBXResourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+A10000292000000100000001 /* LaunchScreen.storyboard in Resources */,
+A10000272000000100000001 /* Preview Assets.xcassets in Resources */,
+A10000252000000100000001 /* Assets.xcassets in Resources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+A1B000022000000100000001 /* Resources */ = {
+isa = PBXResourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+A1A000012000000100000001 /* Sources */ = {
+isa = PBXSourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+A100001F2000000100000001 /* KeyboardShortcuts.swift in Sources */,
+A10000112000000100000001 /* StatsStore.swift in Sources */,
+A100000B2000000100000001 /* TimerEngine.swift in Sources */,
+A10000192000000100000001 /* CircularTimerView.swift in Sources */,
+A100001B2000000100000001 /* StatCard.swift in Sources */,
+A10000032000000100000001 /* ContentView.swift in Sources */,
+A100000D2000000100000001 /* TimerPhase.swift in Sources */,
+A10000152000000100000001 /* HapticsManager.swift in Sources */,
+A10000052000000100000001 /* TimerView.swift in Sources */,
+A10000172000000100000001 /* SoundManager.swift in Sources */,
+A100001D2000000100000001 /* CSVExporter.swift in Sources */,
+A10000092000000100000001 /* SettingsView.swift in Sources */,
+A10000132000000100000001 /* NotificationManager.swift in Sources */,
+A10000072000000100000001 /* HistoryView.swift in Sources */,
+A10000232000000100000001 /* TimerSession.swift in Sources */,
+A100000F2000000100000001 /* SettingsStore.swift in Sources */,
+A10000212000000100000001 /* AppState.swift in Sources */,
+A10000012000000100000001 /* TomatoStudyApp.swift in Sources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+A1B000012000000100000001 /* Sources */ = {
+isa = PBXSourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+A10000312000000100000001 /* TimerEngineTests.swift in Sources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+A10000372000000100000001 /* PBXTargetDependency */ = {
+isa = PBXTargetDependency;
+target = A1A000002000000100000001 /* TomatoStudy */;
+targetProxy = A10000362000000100000001 /* PBXContainerItemProxy */;
+};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+A1A0000B2000000100000001 /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_STYLE = Automatic;
+CURRENT_PROJECT_VERSION = 1;
+DEVELOPMENT_TEAM = "";
+GENERATE_INFOPLIST_FILE = NO;
+INFOPLIST_FILE = TomatoStudy/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+LD_RUNPATH_SEARCH_PATHS = (
+"$(inherited)",
+"@executable_path/Frameworks",
+);
+MARKETING_VERSION = 1.0;
+PRODUCT_BUNDLE_IDENTIFIER = com.example.TomatoStudy;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+SWIFT_EMIT_LOC_STRINGS = YES;
+SWIFT_VERSION = 5.9;
+TARGETED_DEVICE_FAMILY = 2;
+};
+name = Debug;
+};
+A1A0000C2000000100000001 /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_STYLE = Automatic;
+CURRENT_PROJECT_VERSION = 1;
+DEVELOPMENT_TEAM = "";
+GENERATE_INFOPLIST_FILE = NO;
+INFOPLIST_FILE = TomatoStudy/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+LD_RUNPATH_SEARCH_PATHS = (
+"$(inherited)",
+"@executable_path/Frameworks",
+);
+MARKETING_VERSION = 1.0;
+PRODUCT_BUNDLE_IDENTIFIER = com.example.TomatoStudy;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+SWIFT_EMIT_LOC_STRINGS = YES;
+SWIFT_VERSION = 5.9;
+TARGETED_DEVICE_FAMILY = 2;
+};
+name = Release;
+};
+A1B0000B2000000100000001 /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+BUNDLE_LOADER = "$(TEST_HOST)";
+CODE_SIGN_STYLE = Automatic;
+INFOPLIST_FILE = TomatoStudyTests/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+PRODUCT_BUNDLE_IDENTIFIER = com.example.TomatoStudyTests;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.9;
+TARGETED_DEVICE_FAMILY = 2;
+TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TomatoStudy.app/$(EXECUTABLE_NAME)";
+};
+name = Debug;
+};
+A1B0000C2000000100000001 /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+BUNDLE_LOADER = "$(TEST_HOST)";
+CODE_SIGN_STYLE = Automatic;
+INFOPLIST_FILE = TomatoStudyTests/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+PRODUCT_BUNDLE_IDENTIFIER = com.example.TomatoStudyTests;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.9;
+TARGETED_DEVICE_FAMILY = 2;
+TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TomatoStudy.app/$(EXECUTABLE_NAME)";
+};
+name = Release;
+};
+A1F0000B2000000100000001 /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = NO;
+CLANG_ANALYZER_NONNULL = YES;
+CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+CLANG_ENABLE_MODULES = YES;
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+CLANG_WARN_BOOL_CONVERSION = YES;
+CLANG_WARN_COMMA = YES;
+CLANG_WARN_CONSTANT_CONVERSION = YES;
+CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+CLANG_WARN_EMPTY_BODY = YES;
+CLANG_WARN_ENUM_CONVERSION = YES;
+CLANG_WARN_INFINITE_RECURSION = YES;
+CLANG_WARN_INT_CONVERSION = YES;
+CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+CLANG_WARN_STRICT_PROTOTYPES = YES;
+CLANG_WARN_SUSPICIOUS_MOVE = YES;
+CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+CODE_SIGNING_ALLOWED = NO;
+CODE_SIGNING_REQUIRED = NO;
+COPY_PHASE_STRIP = NO;
+DEBUG_INFORMATION_FORMAT = dwarf;
+ENABLE_STRICT_OBJC_MSGSEND = YES;
+ENABLE_TESTABILITY = YES;
+GCC_C_LANGUAGE_STANDARD = gnu17;
+GCC_DYNAMIC_NO_PIC = NO;
+GCC_NO_COMMON_BLOCKS = YES;
+GCC_OPTIMIZATION_LEVEL = 0;
+GCC_PREPROCESSOR_DEFINITIONS = (
+"DEBUG=1",
+"$(inherited)",
+);
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+GCC_WARN_UNDECLARED_SELECTOR = YES;
+GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+GCC_WARN_UNUSED_FUNCTION = YES;
+GCC_WARN_UNUSED_VARIABLE = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+MTL_FAST_MATH = YES;
+ONLY_ACTIVE_ARCH = YES;
+SDKROOT = iphoneos;
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+VALIDATE_PRODUCT = NO;
+};
+name = Debug;
+};
+A1F0000C2000000100000001 /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = NO;
+CLANG_ANALYZER_NONNULL = YES;
+CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+CLANG_ENABLE_MODULES = YES;
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+CLANG_WARN_BOOL_CONVERSION = YES;
+CLANG_WARN_COMMA = YES;
+CLANG_WARN_CONSTANT_CONVERSION = YES;
+CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+CLANG_WARN_EMPTY_BODY = YES;
+CLANG_WARN_ENUM_CONVERSION = YES;
+CLANG_WARN_INFINITE_RECURSION = YES;
+CLANG_WARN_INT_CONVERSION = YES;
+CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+CLANG_WARN_STRICT_PROTOTYPES = YES;
+CLANG_WARN_SUSPICIOUS_MOVE = YES;
+CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+CODE_SIGNING_ALLOWED = NO;
+CODE_SIGNING_REQUIRED = NO;
+COPY_PHASE_STRIP = NO;
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+ENABLE_NS_ASSERTIONS = NO;
+ENABLE_STRICT_OBJC_MSGSEND = YES;
+GCC_C_LANGUAGE_STANDARD = gnu17;
+GCC_NO_COMMON_BLOCKS = YES;
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+GCC_WARN_UNDECLARED_SELECTOR = YES;
+GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+GCC_WARN_UNUSED_FUNCTION = YES;
+GCC_WARN_UNUSED_VARIABLE = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+MTL_ENABLE_DEBUG_INFO = NO;
+MTL_FAST_MATH = YES;
+SDKROOT = iphoneos;
+SWIFT_COMPILATION_MODE = wholemodule;
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+VALIDATE_PRODUCT = YES;
+};
+name = Release;
+};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+A1A0000A2000000100000001 /* Build configuration list for PBXNativeTarget "TomatoStudy" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+A1A0000B2000000100000001 /* Debug */,
+A1A0000C2000000100000001 /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+A1B0000A2000000100000001 /* Build configuration list for PBXNativeTarget "TomatoStudyTests" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+A1B0000B2000000100000001 /* Debug */,
+A1B0000C2000000100000001 /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+A1F0000A2000000100000001 /* Build configuration list for PBXProject "TomatoStudy" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+A1F0000B2000000100000001 /* Debug */,
+A1F0000C2000000100000001 /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+/* End XCConfigurationList section */
+};
+rootObject = A1F000002000000100000001 /* Project object */;
+}
